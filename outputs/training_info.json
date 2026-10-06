@@ -1,0 +1,30 @@
+{
+  "target": "Profit",
+  "n_total": 15000,
+  "n_train": 12000,
+  "n_test": 3000,
+  "n_input_features": 13,
+  "n_encoded_features": 57,
+  "numeric_features": [
+    "Quantity",
+    "Sales_Amount",
+    "Discount",
+    "Year",
+    "Month",
+    "Quarter",
+    "Day",
+    "Day_of_Week"
+  ],
+  "categorical_features": [
+    "Product_Category",
+    "Product_Name",
+    "State",
+    "City",
+    "Payment_Mode"
+  ],
+  "best_model": "Linear Regression",
+  "random_state": 42,
+  "test_size": 0.2,
+  "sklearn_version": "1.8.0",
+  "trained_at": "2026-10-04T16:16:40"
+}

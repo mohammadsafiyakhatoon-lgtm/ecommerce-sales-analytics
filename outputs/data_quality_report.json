@@ -1,0 +1,170 @@
+{
+  "before": {
+    "rows": 15000,
+    "columns": 12,
+    "missing_total": 0,
+    "missing_by_column": {
+      "Order_ID": 0,
+      "Order_Date": 0,
+      "Customer_ID": 0,
+      "Product_Category": 0,
+      "Product_Name": 0,
+      "State": 0,
+      "City": 0,
+      "Payment_Mode": 0,
+      "Quantity": 0,
+      "Sales_Amount": 0,
+      "Discount": 0,
+      "Profit": 0
+    },
+    "duplicate_rows": 0,
+    "duplicate_order_ids": 0,
+    "invalid_dates": 0,
+    "dtypes": {
+      "Order_ID": "str",
+      "Order_Date": "datetime64[us]",
+      "Customer_ID": "str",
+      "Product_Category": "str",
+      "Product_Name": "str",
+      "State": "str",
+      "City": "str",
+      "Payment_Mode": "str",
+      "Quantity": "int64",
+      "Sales_Amount": "int64",
+      "Discount": "float64",
+      "Profit": "float64"
+    },
+    "unique_values": {
+      "Order_ID": 15000,
+      "Order_Date": 731,
+      "Customer_ID": 7294,
+      "Product_Category": 5,
+      "Product_Name": 25,
+      "State": 7,
+      "City": 7,
+      "Payment_Mode": 5,
+      "Quantity": 5,
+      "Sales_Amount": 5010,
+      "Discount": 31,
+      "Profit": 13942
+    },
+    "date_min": "2023-01-01",
+    "date_max": "2024-12-31",
+    "outliers_iqr": {
+      "Quantity": 0,
+      "Sales_Amount": 54,
+      "Discount": 0,
+      "Profit": 634
+    }
+  },
+  "after": {
+    "rows": 15000,
+    "columns": 12,
+    "missing_total": 0,
+    "missing_by_column": {
+      "Order_ID": 0,
+      "Order_Date": 0,
+      "Customer_ID": 0,
+      "Product_Category": 0,
+      "Product_Name": 0,
+      "State": 0,
+      "City": 0,
+      "Payment_Mode": 0,
+      "Quantity": 0,
+      "Sales_Amount": 0,
+      "Discount": 0,
+      "Profit": 0
+    },
+    "duplicate_rows": 0,
+    "duplicate_order_ids": 0,
+    "invalid_dates": 0,
+    "dtypes": {
+      "Order_ID": "str",
+      "Order_Date": "datetime64[us]",
+      "Customer_ID": "str",
+      "Product_Category": "str",
+      "Product_Name": "str",
+      "State": "str",
+      "City": "str",
+      "Payment_Mode": "str",
+      "Quantity": "int64",
+      "Sales_Amount": "int64",
+      "Discount": "float64",
+      "Profit": "float64"
+    },
+    "unique_values": {
+      "Order_ID": 15000,
+      "Order_Date": 731,
+      "Customer_ID": 7294,
+      "Product_Category": 5,
+      "Product_Name": 25,
+      "State": 7,
+      "City": 7,
+      "Payment_Mode": 5,
+      "Quantity": 5,
+      "Sales_Amount": 5010,
+      "Discount": 31,
+      "Profit": 13942
+    },
+    "date_min": "2023-01-01",
+    "date_max": "2024-12-31",
+    "outliers_iqr": {
+      "Quantity": 0,
+      "Sales_Amount": 54,
+      "Discount": 0,
+      "Profit": 634
+    }
+  },
+  "steps": [
+    {
+      "Step": "Trim and normalise text",
+      "Records affected": 0,
+      "Action": "Removed stray/duplicate spaces in text columns"
+    },
+    {
+      "Step": "Convert data types",
+      "Records affected": 0,
+      "Action": "Order_Date parsed to datetime; numeric columns coerced (unparseable -> missing)"
+    },
+    {
+      "Step": "Drop rows without valid Order_Date or Profit",
+      "Records affected": 0,
+      "Action": "Rows removed (date features / target cannot be derived)"
+    },
+    {
+      "Step": "Fill missing categorical values",
+      "Records affected": 0,
+      "Action": "Filled with 'Unknown'"
+    },
+    {
+      "Step": "Fill missing numeric values",
+      "Records affected": 0,
+      "Action": "Filled with column median"
+    },
+    {
+      "Step": "Remove invalid values",
+      "Records affected": 0,
+      "Action": "Quantity <= 0, Sales_Amount <= 0 or Discount outside 0-1 removed"
+    },
+    {
+      "Step": "Remove duplicate records",
+      "Records affected": 0,
+      "Action": "0 fully duplicated rows + 0 repeated Order_ID removed"
+    },
+    {
+      "Step": "Flag numeric outliers (IQR rule)",
+      "Records affected": 688,
+      "Action": "Sales_Amount/Profit outliers retained - they are genuine high-value orders"
+    },
+    {
+      "Step": "Create derived features",
+      "Records affected": 15000,
+      "Action": "Year, Month, Month_Name, Quarter, Day, Day_of_Week, Day_Name, Year_Month, Profit_Margin"
+    }
+  ],
+  "records_removed": 0,
+  "final_shape": [
+    15000,
+    21
+  ]
+}

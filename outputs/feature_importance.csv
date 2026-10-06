@@ -1,0 +1,58 @@
+Feature,Original_Feature,Importance
+Sales_Amount,Sales_Amount,0.8393404197298202
+Discount,Discount,0.02712426698962779
+Day,Day,0.025490584338811413
+Day_of_Week,Day_of_Week,0.01585833798352149
+Month,Month,0.01575823630974518
+Quantity,Quantity,0.005961707847723362
+Year,Year,0.005651782132475425
+Quarter,Quarter,0.0033137767154900683
+Payment_Mode_UPI,Payment_Mode,0.0030196060999467234
+Product_Category_Electronics,Product_Category,0.0027701848000090817
+Payment_Mode_Net Banking,Payment_Mode,0.002725397343950412
+Payment_Mode_Credit Card,Payment_Mode,0.0026074913873619016
+Payment_Mode_Cash on Delivery,Payment_Mode,0.002308471729847331
+Payment_Mode_Debit Card,Payment_Mode,0.0022497285581908563
+Product_Category_Sports,Product_Category,0.0021809346232957577
+Product_Category_Home & Kitchen,Product_Category,0.0021320037103546535
+City_Chennai,City,0.0020374507008033304
+Product_Category_Clothing,Product_Category,0.002021482287765925
+State_Uttar Pradesh,State,0.0020170670903860233
+State_Karnataka,State,0.001954623922749193
+City_Jaipur,City,0.001954347399878517
+City_Lucknow,City,0.0019403403270961102
+State_Delhi,State,0.0019383283189211855
+State_Rajasthan,State,0.0019159697777163085
+State_Maharashtra,State,0.0019121380422622845
+Product_Category_Beauty,Product_Category,0.0018340870673040487
+City_Bangalore,City,0.001804228608166294
+State_Tamil Nadu,State,0.0017754923404612484
+City_Ahmedabad,City,0.001676103647380407
+City_Mumbai,City,0.001638429073271454
+City_Delhi,City,0.0014116015787358192
+State_Gujarat,State,0.001356655868961541
+Product_Name_Headphones,Product_Name,0.0009390272482211014
+Product_Name_Skin Cream,Product_Name,0.0009269025674527264
+Product_Name_Yoga Mat,Product_Name,0.0007982697421660981
+Product_Name_Vacuum Cleaner,Product_Name,0.0007351464179830649
+Product_Name_Smartphone,Product_Name,0.0006660918426274167
+Product_Name_Makeup Kit,Product_Name,0.0006244752354215125
+Product_Name_Dinner Set,Product_Name,0.0005740742740875857
+Product_Name_Tablet,Product_Name,0.0005079725622893189
+Product_Name_Shirt,Product_Name,0.0004745575616031209
+Product_Name_Jeans,Product_Name,0.0004703648870701657
+Product_Name_Camera,Product_Name,0.0004545555014194656
+Product_Name_Football,Product_Name,0.0004478249485103141
+Product_Name_Sneakers,Product_Name,0.0004471374510756609
+Product_Name_Tennis Racket,Product_Name,0.0004231011387829975
+Product_Name_T-Shirt,Product_Name,0.00041977794008193746
+Product_Name_Air Fryer,Product_Name,0.00040483467987596436
+Product_Name_Hair Dryer,Product_Name,0.0003858469943028225
+Product_Name_Cookware Set,Product_Name,0.0003603196686755697
+Product_Name_Face Wash,Product_Name,0.00035270503883796375
+Product_Name_Dumbbells,Product_Name,0.00035212066456735084
+Product_Name_Laptop,Product_Name,0.0003355960308199025
+Product_Name_Mixer,Product_Name,0.0003268857953749306
+Product_Name_Perfume,Product_Name,0.00032167391202882266
+Product_Name_Cricket Bat,Product_Name,0.00028679118507052564
+Product_Name_Jacket,Product_Name,0.00028267035962225066
